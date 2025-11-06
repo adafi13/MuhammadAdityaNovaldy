@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Muhammad Aditya Novaldy — Network Engineer</title>
+  <meta name="description" content="Portofolio ringkas mahasiswa Teknik Informatika berfokus Network Engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="brand">Pemograman<span>Web 1 </span></a>
+      <button id="navToggle" class="nav__toggle" aria-label="Menu">☰</button>
+      <ul id="navMenu" class="menu">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Lab/Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><button id="themeToggle" class="chip" aria-label="Tema">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero__text">
+        <h1>Muhammad Aditya Novaldy   <span>Network Engineer</span></h1>
+        <p>Kuat di dasar jaringan komputer: subnetting, routing/switching, VLAN, dan konfigurasi Cisco/MikroTik. Suka membuat topologi efisien dan terdokumentasi.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">Lihat Lab</a>
+          <a class="btn btn--ghost" href="#contact">Hubungi</a>
+        </div>
+      </div>
+      <div class="hero__photo">
+<div class="profile-card" aria-label="Foto Muhammad Aditya Novaldy">
+  <img src="assets/img/foto-saya.jpg" alt="Muhammad Aditya Novaldy" width="340" height="420">
+  <div class="badge badge-role">TI 24 B1</div>
+  <div class="badge badge-skill">312410360</div>
+</div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>Profil Singkat</h2>
+      <p>Saya Mahasiswa Universitas Pelita Bangsa Semester 3 dan Saya juga punya Skill yang berfokus pada administrasi dan desain jaringan kecil-menengah. Familiar dengan pengalamatan IP, konfigurasi perangkat, pengujian konektivitas, dan dokumentasi standar. Tertarik mengejar sertifikasi <em>CCNA</em> sebagai target jangka dekat.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Fokus Utama</h3>
+          <ul class="list">
+            <li>Perencanaan IP & Subnetting</li>
+            <li>Routing statis & dinamis (RIPv2, OSPF single area)</li>
+            <li>VLAN & Trunking, Inter-VLAN</li>
+            <li>Firewall dasar & NAT</li>
+            <li>Monitoring ringan (ping, traceroute, Netwatch)</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Perangkat & Tools</h3>
+          <ul class="badges">
+            <li>Cisco Packet Tracer</li>
+            <li>GNS3 (dasar)</li>
+            <li>MikroTik RouterOS</li>
+            <li>Wireshark</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Keahlian Inti</h2>
+      <div class="typewrap" aria-label="Keahlian unggulan">
+        <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+      </div>
+
+      <div class="skills">
+        <div class="skill"><span>Subnetting</span><div class="bar" data-val="90"><i></i></div></div>
+        <div class="skill"><span>Routing & Switching</span><div class="bar" data-val="85"><i></i></div></div>
+        <div class="skill"><span>VLAN & Trunk</span><div class="bar" data-val="80"><i></i></div></div>
+        <div class="skill"><span>MikroTik/Cisco CLI</span><div class="bar" data-val="80"><i></i></div></div>
+        <div class="skill"><span>Network Security Dasar</span><div class="bar" data-val="60"><i></i></div></div>
+      </div>
+      <p class="muted">Klik bar untuk melihat catatan ringkas.</p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Lab / Proyek Sederhana</h2>
+      <div class="grid">
+        <article class="project card">
+          <h3>Topologi VLAN Kampus Mini</h3>
+          <p>Segmentasi jaringan lab menjadi VLAN Admin, Dosen, dan Mahasiswa. Inter-VLAN via router-on-a-stick.</p>
+          <button class="btn btn--small" data-demo="vlan">Lihat Ringkasan</button>
+        </article>
+        <article class="project card">
+          <h3>Routing OSPF Single Area</h3>
+          <p>Simulasi tiga router dengan OSPF area 0. Uji failover dan konvergensi dasar.</p>
+          <button class="btn btn--small" data-demo="ospf">Lihat Ringkasan</button>
+        </article>
+        <article class="project card">
+          <h3>Gateway Internet & NAT</h3>
+          <p>Konfigurasi NAT, DHCP, dan firewall dasar untuk jaringan kecil 20–30 host.</p>
+          <button class="btn btn--small" data-demo="nat">Lihat Ringkasan</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Kontak</h2>
+      <div class="card" style="display:grid;gap:.8rem">
+        <p>Nama: <strong>Muhammad Aditya Novaldy</strong></p>
+        <p>Email: <a href="mailto:adityanovaldy721@gmail.com?subject=Kontak%20Portofolio&body=Halo, saya Muhammad Aditya Novaldy.%0ASaya ingin menghubungi melalui portofolio.">adityanovaldy721@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/6285156412702?text=Halo,%20saya%20Muhammad%20Aditya%20Novaldy.%20Saya%20ingin%20menghubungi%20melalui%20portofolio.">+62 851-5641-2702</a></p>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+          <a class="btn" href="https://wa.me/6285156412702?text=Halo,%20saya%20Muhammad%20Aditya%20Novaldy.%20Saya%20ingin%20menghubungi%20melalui%20portofolio." target="_blank" rel="noopener">Chat WhatsApp</a>
+          <a class="btn btn--ghost" id="emailBtn" href="#">Kirim Email</a>
+        </div>
+        <p class="muted">Hubungi saya Melalui Whatsapp dan Email.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> Muhammad Aditya Novaldy</p>
+      <a href="#home" class="to-top" aria-label="Kembali ke atas">↑</a>
+    </div>
+  </footer>
+
+  <dialog id="modal">
+    <article class="card modal">
+      <header class="modal__head">
+        <h3 id="modalTitle">Ringkasan</h3>
+        <button id="closeModal" class="chip" type="button" aria-label="Tutup modal" title="Tutup">✕</button>
+      </header>
+      <div id="modalBody" class="modal__body"></div>
+    </article>
+  </dialog>
+
+  <script src="assets/js/app.js"></script>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('emailBtn');
+      if(!btn) return;
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        const gmail = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=adityanovaldy721%40gmail.com&su=Kontak%20Portofolio&body=Halo%2C%20saya%20Muhammad%20Aditya%20Novaldy.%0ASaya%20ingin%20menghubungi%20melalui%20portofolio.";
+        const win = window.open(gmail, "_blank", "noopener");
+        setTimeout(function(){
+          if(!win || win.closed) {
+            window.location.href = "mailto:adityanovaldy721@gmail.com?subject=Kontak%20Portofolio&body=Halo%2C%20saya%20Muhammad%20Aditya%20Novaldy.%0ASaya%20ingin%20menghubungi%20melalui%20portofolio.";
+          }
+        }, 300);
+      });
+    })();
+  </script>
+
+</body>
+</html>
