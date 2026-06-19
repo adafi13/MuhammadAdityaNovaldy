@@ -1,0 +1,35 @@
+{
+  "name": "muhammadadityanovaldy",
+  "version": "1.0.0",
+  "description": "Portofolio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adafi13/MuhammadAdityaNovaldy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/adafi13/MuhammadAdityaNovaldy/issues"
+  },
+  "homepage": "https://github.com/adafi13/MuhammadAdityaNovaldy#readme",
+  "dependencies": {
+    "@fancyapps/ui": "^6.1.14",
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "bootstrap": "^5.3.8",
+    "gsap": "^3.15.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}
