@@ -1,6 +1,6 @@
-import vlanTopology from '../assets/img/vlan-topology.png';
-import ospfRouting from '../assets/img/ospf-routing.png';
-import internetNat from '../assets/img/internet-nat.png';
+import vlanTopology from '../assets/img/vlan-topology.jpg';
+import ospfRouting from '../assets/img/ospf-routing.jpg';
+import internetNat from '../assets/img/internet-nat.jpg';
 import apoapps from '../assets/img/projects/apoapps.jpg';
 import spp from '../assets/img/projects/spp.jpg';
 
