@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export default function Modal({ open, title, onClose, children }) {
+export default function Modal({ open, title, onClose, children, size }) {
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function Modal({ open, title, onClose, children }) {
 
   return (
     <dialog ref={dialogRef} onCancel={onClose}>
-      <article className="modal">
+      <article className={`modal${size === 'lg' ? ' modal--lg' : ''}`}>
         <header className="modal__head">
           <h3>{title}</h3>
           <button type="button" id="closeModal" aria-label="Tutup modal" title="Tutup" onClick={onClose}>

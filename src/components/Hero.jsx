@@ -32,7 +32,22 @@ function wait(ms, signal) {
   });
 }
 
-export default function Hero() {
+function CvPreview() {
+  return (
+    <div className="cv-preview">
+      <iframe src={cvPdf} title="CV Muhammad Aditya Novaldy" className="cv-preview-frame" />
+      <p className="muted cv-preview-fallback">
+        Preview tidak muncul?{' '}
+        <a href={cvPdf} target="_blank" rel="noopener">
+          Buka di tab baru
+        </a>
+        .
+      </p>
+    </div>
+  );
+}
+
+export default function Hero({ onOpenModal }) {
   const [labelText, setLabelText] = useState('');
   const [nameText, setNameText] = useState('');
   const [roleText, setRoleText] = useState('');
@@ -100,6 +115,14 @@ export default function Hero() {
             <a className="btn" href="#projects">
               Lihat Proyek <i className="fa-solid fa-arrow-right"></i>
             </a>
+            <button
+              type="button"
+              className="btn btn--ghost"
+              style={{ borderColor: 'var(--accent-bright)', color: 'var(--accent-bright)' }}
+              onClick={() => onOpenModal('CV — Muhammad Aditya Novaldy', <CvPreview />, 'lg')}
+            >
+              Lihat CV <i className="fa-solid fa-eye" style={{ marginLeft: '0.3rem' }}></i>
+            </button>
             <a
               className="btn btn--ghost"
               href={cvPdf}

@@ -25,9 +25,9 @@ function fillSkill(skill) {
 }
 
 export default function App() {
-  const [modal, setModal] = useState({ open: false, title: '', content: null });
+  const [modal, setModal] = useState({ open: false, title: '', content: null, size: null });
 
-  const openModal = (title, content) => setModal({ open: true, title, content });
+  const openModal = (title, content, size) => setModal({ open: true, title, content, size });
   const closeModal = () => setModal((m) => ({ ...m, open: false }));
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function App() {
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero onOpenModal={openModal} />
         <About />
         <Skills onOpenModal={openModal} />
         <Tools />
@@ -83,7 +83,7 @@ export default function App() {
       </main>
       <Footer />
       <FabGroup />
-      <Modal open={modal.open} title={modal.title} onClose={closeModal}>
+      <Modal open={modal.open} title={modal.title} onClose={closeModal} size={modal.size}>
         {modal.content}
       </Modal>
     </>
