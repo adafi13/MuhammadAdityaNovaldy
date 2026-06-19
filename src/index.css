@@ -565,6 +565,172 @@ a {
   justify-content: center;
 }
 
+/* tools (subnet/vlsm calculator) */
+.tool-tabs {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tool-card {
+  padding: 2rem;
+}
+
+.tool-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.tool-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1 1 220px;
+}
+
+.tool-field--small {
+  flex: 0 0 110px;
+}
+
+.tool-field label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.tool-field input,
+.tool-row input {
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  font-family: var(--font-main);
+  width: 100%;
+}
+
+.tool-field input:focus,
+.tool-row input:focus {
+  outline: none;
+  border-color: var(--accent-bright);
+}
+
+.tool-cidr-input {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  padding: 0 0.8rem;
+}
+
+.tool-cidr-input span {
+  color: var(--muted);
+}
+
+.tool-cidr-input input {
+  border: 0;
+  background: transparent;
+  padding: 0.7rem 0;
+  width: 100%;
+  color: var(--text);
+}
+
+.tool-cidr-input input:focus {
+  outline: none;
+}
+
+.tool-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.tool-row {
+  display: grid;
+  grid-template-columns: 1fr 160px auto;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.tool-row__remove {
+  width: 40px;
+  height: 40px;
+}
+
+.tool-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tool-error {
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin: 0;
+}
+
+.tool-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.tool-table th,
+.tool-table td {
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--accent-border);
+  font-size: 0.9rem;
+}
+
+.tool-table tr:last-child th,
+.tool-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.tool-table:not(.tool-table--vlsm) th {
+  color: var(--muted);
+  font-weight: 500;
+  width: 45%;
+}
+
+.tool-table:not(.tool-table--vlsm) td {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tool-table--vlsm thead th {
+  color: var(--accent-bright);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.tool-table--vlsm td {
+  color: var(--text);
+}
+
+.tool-table-wrap {
+  overflow-x: auto;
+}
+
+@media (max-width: 576px) {
+  .tool-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* experience */
 .exp-card .meta {
   font-size: 0.85rem;

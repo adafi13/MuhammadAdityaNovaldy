@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: '#home', label: 'Beranda' },
   { href: '#about', label: 'Profil' },
   { href: '#skills', label: 'Keahlian' },
+  { href: '#tools', label: 'Kalkulator' },
   { href: '#experience', label: 'Pengalaman' },
   { href: '#certificates', label: 'Prestasi' },
   { href: '#projects', label: 'Proyek' },

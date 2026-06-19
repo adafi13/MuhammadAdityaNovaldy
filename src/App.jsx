@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Tools from './components/Tools';
 import Experience from './components/Experience';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
@@ -73,6 +74,7 @@ export default function App() {
         <Hero />
         <About />
         <Skills onOpenModal={openModal} />
+        <Tools />
         <Experience />
         <Certificates />
         <Projects onOpenModal={openModal} />
