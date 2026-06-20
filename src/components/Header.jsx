@@ -18,6 +18,9 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav container">
+        <a href="#home" className="brand">
+          A<span>N</span>
+        </a>
         <button
           className="icon-btn nav__toggle"
           aria-label="Menu"
