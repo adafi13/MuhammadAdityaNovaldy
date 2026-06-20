@@ -21,7 +21,7 @@ export default function FabGroup() {
   return (
     <div className="fab-group">
       {showBackToTop && (
-        <button className="fab-btn" aria-label="Kembali ke atas" onClick={scrollToTop}>
+        <button className="fab-btn fab-btn--top" aria-label="Kembali ke atas" onClick={scrollToTop}>
           <i className="fa-solid fa-arrow-up"></i>
         </button>
       )}
