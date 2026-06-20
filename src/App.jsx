@@ -69,7 +69,7 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      <Header onOpenModal={openModal} />
       <main>
         <Hero onOpenModal={openModal} />
         <About />
