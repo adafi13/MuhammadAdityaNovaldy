@@ -101,7 +101,16 @@ export default function Hero({ onOpenModal }) {
   return (
     <section id="home" className="hero">
       {canUse3D ? <HeroCanvas /> : <div className="hero__fallback-bg" aria-hidden="true" />}
+      <span className="hero__bigtext" aria-hidden="true">
+        Network Engineer
+      </span>
       <div className="container hero__inner">
+        <div className="hero__photo-wrap">
+          <div className="hero__photo">
+            <img src={heroPhoto} alt="Muhammad Aditya Novaldy" />
+          </div>
+        </div>
+
         <div className="hero__text glass-panel">
           <p className={`section-label${labelCursor ? ' cursor-blink' : ''}`}>{labelText}</p>
           <h1>
@@ -135,11 +144,36 @@ export default function Hero({ onOpenModal }) {
             </a>
           </div>
         </div>
-        <div className="hero__photo">
-          <div className="photo-frame">
-            <img src={heroPhoto} alt="Muhammad Aditya Novaldy" />
+
+        <aside className="hero__side">
+          <h3>Tentang Saya</h3>
+          <p className="muted">
+            Mahasiswa Teknik Informatika yang fokus ke jaringan & infrastruktur IT. Suka membangun
+            topologi yang rapi, terdokumentasi, dan gampang dirawat.
+          </p>
+          <h4>Temukan saya di</h4>
+          <div className="hero__side-social">
+            <a
+              href="https://wa.me/6285156412702?text=Halo,%20saya%20Muhammad%20Aditya%20Novaldy.%20Saya%20ingin%20menghubungi%20melalui%20portofolio."
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <i className="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://id.linkedin.com/in/m-aditya-novaldy-93437023a"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/adafi13" target="_blank" rel="noopener" aria-label="GitHub">
+              <i className="fa-brands fa-github"></i>
+            </a>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
   );
