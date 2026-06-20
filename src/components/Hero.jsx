@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import HeroCanvas from './HeroCanvas';
-import heroPhoto from '../assets/img/foto-saya-cropped.png';
+import heroPhoto from '../assets/img/foto-saya-cropped.webp';
 import cvPdf from '../assets/docs/cv-aditya-novaldy.pdf';
 import { supportsWebGL } from '../utils/supportsWebGL';
 import { prefersReducedMotion } from '../utils/prefersReducedMotion';
